@@ -1,0 +1,24 @@
+# arishmapersadh 
+
+Telling Fascinating Stories
+
+* Expand on mouseover */
+$(".whoweare-title").hover(function(){
+    $(this).stop(true, false).animate({
+        height: '87px',
+        marginTop: '27px',
+        marginBottom: '27px'
+    });
+    $(".whoweare-section-container").stop(true, false).animate({
+        marginTop: '-126px',
+    });
+}, function() {
+    $(this).stop(true, false).animate({
+        height: '24px',
+        marginTop: '0px',
+        marginBottom: '0px'
+    });
+    $(".whoweare-section-container").stop(true, false).animate({
+        marginTop: '-67px',
+    });
+});
